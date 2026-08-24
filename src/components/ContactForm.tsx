@@ -69,6 +69,7 @@ function ContactForm() {
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Tu nombre"
+            autoComplete="off"
             required
           />
         
@@ -83,6 +84,7 @@ function ContactForm() {
         value={correo}
         onChange={(e) => setCorreo(e.target.value)}
         placeholder="tu@email.com"
+        autoComplete="off"
         required
         />
       </div>
@@ -97,6 +99,7 @@ function ContactForm() {
         placeholder="Escribe tu mensaje"
         rows={5}
         required
+        autoComplete="off"
       />
       </div>
 
