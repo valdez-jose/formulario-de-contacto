@@ -64,13 +64,13 @@ function ContactForm() {
       <div className={styles.campo}>
         <label htmlFor="nombre">Nombre</label>
           <input
-  id="nombre"
-  type="text"
-  value={nombre}
-  onChange={(e) => setNombre(e.target.value)}
-  placeholder="Tu nombre"
-  required
-/>
+            id="nombre"
+            type="text"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+            placeholder="Tu nombre"
+            required
+          />
         
       </div>
 
@@ -78,26 +78,26 @@ function ContactForm() {
         <label htmlFor="correo">Correo</label>
 
         <input
-  id="correo"
-  type="email"
-  value={correo}
-  onChange={(e) => setCorreo(e.target.value)}
-  placeholder="tu@email.com"
-  required
-/>
+        id="correo"
+        type="email"
+        value={correo}
+        onChange={(e) => setCorreo(e.target.value)}
+        placeholder="tu@email.com"
+        required
+        />
       </div>
 
       <div className={styles.campo}>
         <label htmlFor="mensaje">Mensaje</label>
 
        <textarea
-  id="mensaje"
-  value={mensaje}
-  onChange={(e) => setMensaje(e.target.value)}
-  placeholder="Escribe tu mensaje"
-  rows={5}
-  required
-/>
+        id="mensaje"
+        value={mensaje}
+        onChange={(e) => setMensaje(e.target.value)}
+        placeholder="Escribe tu mensaje"
+        rows={5}
+        required
+      />
       </div>
 
       <button type="submit">Enviar mensaje</button>
